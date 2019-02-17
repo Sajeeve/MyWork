@@ -1,0 +1,41 @@
+.main-nav {
+    float: left;
+    width: 30%;
+    height: 450px; 
+    background: #ccc;
+  }
+
+  a {text-decoration: none;}
+  li {list-style: none;}
+
+  .main-nav a {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0 10px 5px;
+    border-bottom: 1px dotted gray;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-nav a:hover {background: rgba(121,165,162,1.00);}
+.main-nav-ul ul {display: none; }
+.main-nav-ul li:hover ul {display: block;}
+.main-nav-ul ul a:before {
+	content: '\203A';
+	margin-right: 20px;
+}
+.main-nav .sub-arrow:after {
+	content: '\203A';
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+}
+.main-nav li:hover .sub-arrow:after {
+	content: '\2039';
+}
